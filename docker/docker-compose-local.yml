@@ -21,6 +21,8 @@ services:
         environment:
             - LOAD_EX=n
             - EXECUTOR=Local
+            - AWS_SHARED_CREDENTIALS_FILE=/home/.aws/credentials
+            - AWS_CONFIG_FILE=/home/.aws/config
         logging:
             options:
                 max-size: 10m
